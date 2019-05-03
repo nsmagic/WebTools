@@ -1,0 +1,9 @@
+Port21 : OK
+Port22 : OK
+Port23 : Inaccessible
+Port25 : OK
+Port53 : OK
+Port80 : OK
+Port110 : OK
+Port1433 : Inaccessible
+Port3306 : Inaccessible

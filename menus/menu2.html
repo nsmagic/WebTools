@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CSS Mac Dock</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ div, img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+
+<link href="./css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="dock" id="dock">
+  <div class="dock-container">
+  <a class="dock-item" href="./index.php"><img src="images/menu/home.png" alt="home" /><span>Home</span></a> 
+  <a class="dock-item" href="./pages/webmail.html"><img src="images/menu/email.png" alt="Webmails" /><span>Webmails</span></a> 
+  <a class="dock-item" href="./pages/liens.html"><img src="images/menu/link.png" alt="Liens" /><span>Liens</span></a> 
+  <a class="dock-item" href="./pages/logs"><img src="images/menu/logs.png" alt="Logs" /><span>Logs</span></a> 
+  <a class="dock-item" href="#"><img src="images/menu/video.png" alt="video" /><span>Video</span></a> 
+  <a class="dock-item" href="#"><img src="images/menu/history.png" alt="history" /><span>History</span></a> 
+  <a class="dock-item" href="#"><img src="images/menu/monde.png" alt="calendar" /><span>Surveillance</span></a> 
+  <a class="dock-item" href="./pages/secu/logoff.php"><img src="images/menu/exit.png" alt="rss" /><span>Logoff</span></a> 
+</div>
+</div>
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 40,
+					proximity: 90,
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+</script>
+</body>
+</html>
